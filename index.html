@@ -1,5 +1,5 @@
 
-<html>
+<html data-wf-page="60b721d49a94bcf44ce8cc9f" data-wf-site="60b721d49a94bc45efe8cca0" lang="en">
 <head>
 <title>Pelenia DAO - People-powered media projects.</title>
 <meta name="title" content="Pelenia DAO - People-powered media projects">
@@ -15,6 +15,10 @@
 <meta name="twitter:site" content="@PeleniaDAO">
 <meta name="twitter:image" content="https://pelenia.online/assets/meta-image-2.png">
 <meta name="twitter:card" content="summary_large_image">
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" type="text/css" href="assets/frontend/css/bootstrap.min.css">
 <link href="assets/landingPages/css/webflow.css" rel="stylesheet" type="text/css">
 <link href="assets/landingPages/css/peleStatic.css" rel="stylesheet" type="text/css">
@@ -189,6 +193,34 @@ h1, h2, h3, h5, .navlink, a {
 .grad-mnav-wrapper, .bg-gradient {
   pointer-events: none;
 }
+
+/* the slides */
+.slick-slide {
+    opacity: 0.3;
+    pointer-events: none;
+    margin: 0 40px;
+}
+.slick-center {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.slick-slide2 {
+    margin: 0 10px;
+}
+/* the parent */
+.slick-list {
+    overflow: hidden;
+    margin: 0 5px;
+    margin-top: 50px;
+}
+.slider-nav {
+    overflow: hidden;
+    bottom: 500px;
+    margin: 0 10px;
+}
+
 </style>
 </div>
 
@@ -294,7 +326,7 @@ From <a href="https://en.wikipedia.org/wiki/Smart_contract" target="_blank">Wiki
 <p style="line-height: 2.75rem;" class="modal-text-shadow-dark">
 The <strong>Project Fungible Token (PFT)</strong> is PELE's standardized method of tokenizing media projects, a temporary store of value quantifying public interest in a project. Creators may opt to initially fund an escrow to prove their commitment to a new project, increasing confidence for buyers of PFTs by locking in a sum of $PELE to be released at the completion of the creative work, successful or not. PFTs can be allocated by their creators to creative contributors, sold to patrons, and/or distributed to project participants to form a DAO. PFTs can be exchanged between users, redeemed for a variety of possible interactions such as privileged experiences, bidding on NFTs and/or, upon completion, melted into either its corresponding share of the project's escrow or a unique badge that verifies the holder's contribution.
 <br><img style="min-width:140%; margin-left:-20%" src="assets/landingPages/images/lifecycle.svg"><br><br>
-With a fixed 100 PFTs per project pool, the scarce nature of the PFT incentivizes holders to participate constructively with the project's creator even if their intentions are purely speculative. Since a single PFT represents a 1% stake in the project, PFT ownership provides proportional access to a project's escrow, voting rights (in the case of a DAO), and proportional influence when a badge is minted for the holder's profile. While the $PELE token provides holders access to the network's tools, PFTs allow for intelligent participation within communities.
+With a fixed 100 PFTs per project pool, the scarce nature of the PFT incentivizes holders to participate constructively with the project's creator even if their intentions are purely speculative. Since a single PFT represents a 1% stake in the project, PFT ownership provides proportional access to a project's escrow, voting rights (in the case of a DAO), and proportional influence when a badge is minted for the holder's profile. While the $PELE token provides holders access to the network's tools, PFTs allow for intelligent participation within communities.</p>
 </span>
 </div>
 </div>
@@ -397,7 +429,7 @@ Your browser does not support the video tag.
 </div>
 </div>
 </div>
-<main class="main">
+<main class="main" style="width:100%;">
 <section id="hero" data-w-id="e00351cf-6430-1da8-2852-de8134ba15ea" class="sec hero">
 <div class="hero-grid">
 <div class="gridm left hero"><img src="https://pelenia.online/assets/landingPages/images/P.svg" loading="lazy" id="w-node-b7ad57b2-a005-f332-1195-8c5077027a05-4ce8cc9f" alt="The Pele Icon" class="circle-logo-img hero">
@@ -479,9 +511,7 @@ Your browser does not support the video tag.
 <p class="small left">Our free interactive primer on storytelling teaches you how to explore your idea and tell your project&#x27;s story. Save your progress to use later and collaborate with others.</p><img src="https://pelenia.online/assets/landingPages/images/backdrop-cards.svg" loading="lazy" alt="" class="backdrop">
 <a href="https://www.videostorytelling.guide" class="button w-inline-block" target="_blank">
 <div class="buttontext">Guide Me</div>
-<div class="arr-right w-embed"><svg width="100%" height="100%" viewbox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2 8.99996L26 8.99996M26 8.99996L19.666 15.334M26 8.99996L19.666 2.66593" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg></div>
+<div class="arr-right w-embed"><img src="assets/landingPages/images/arrows-01.png"></div>
 </a>
 </div>
 <div class="card">
@@ -489,9 +519,7 @@ Your browser does not support the video tag.
 <p class="small left">Let your audience decide! Storytellers share options for what happens next, and participants place wagers on their favorite option. All participants are rewarded. </p><img src="https://pelenia.online/assets/landingPages/images/backdrop-cards.svg" loading="lazy" alt="" class="backdrop">
 <a href="#" class="button w-inline-block">
 <div class="buttontext">Coming Soon!</div>
-<div class="arr-right w-embed"><svg width="100%" height="100%" viewbox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2 8.99996L26 8.99996M26 8.99996L19.666 15.334M26 8.99996L19.666 2.66593" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg></div>
+<div class="arr-right w-embed"><img src="assets/landingPages/images/arrows-01.png"></div>
 </a>
 </div>
 <div class="card">
@@ -499,9 +527,7 @@ Your browser does not support the video tag.
 <p class="small left">Soon, our reputation system will be available for creative communities to organize themselves amongst projects. For now, see our three tiers of DAO membership.</p><img src="https://pelenia.online/assets/landingPages/images/backdrop-cards.svg" loading="lazy" alt="" class="backdrop mirrow">
 <a href="https://gov.pelenia.online" target ="blank" class="button w-inline-block">
 <div class="buttontext">Check It Out</div>
-<div class="arr-right w-embed"><svg width="100%" height="100%" viewbox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2 8.99996L26 8.99996M26 8.99996L19.666 15.334M26 8.99996L19.666 2.66593" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg></div>
+<div class="arr-right w-embed"><img src="assets/landingPages/images/arrows-01.png"></div>
 </a>
 </div>
 <div class="card">
@@ -509,9 +535,7 @@ Your browser does not support the video tag.
 <p class="small left">Pelenia's system of reputation is meant to work with PFTs, which unite audience and creator into a community and creates unique short and long-term incentives.</p><img src="https://pelenia.online/assets/landingPages/images/backdrop-cards.svg" loading="lazy" alt="" class="backdrop mirrow">
 <a href="https://peledao.app/What-are-PFTs-PFT-Smart-Contracts-v0-6b40e1bc68fe4275b0206f95931c6cc0" target="blank" class="button w-inline-block">
 <div class="buttontext">Learn More</div>
-<div class="arr-right w-embed"><svg width="100%" height="100%" viewbox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2 8.99996L26 8.99996M26 8.99996L19.666 15.334M26 8.99996L19.666 2.66593" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg></div>
+<div class="arr-right w-embed"><img src="assets/landingPages/images/arrows-01.png"></div>
 </a>
 </div>
 </div>
@@ -550,7 +574,7 @@ Your browser does not support the video tag.
 <h3 class="head">Creativity-powered, NFT-friendly, and metaversal.</h3>
 </div>
 <div>
-<p>There are no limits in the open-source Peleverse (PLVRS) of ideas. Using its PFT, connect with other artists or NFT holders and use Pelenia DAO intellectual property to expand into new territory and generate new value streams.</em>
+<p>There are no limits in the open-source Peleverse (PLVRS) of ideas. Using its PFT, connect with other artists or NFT holders and use Pelenia DAO intellectual property to expand into new territory and generate new value streams.</em></p>
 <p><em>Powered by the Zilliqa blockchain, <a href="https://github.com/pelenia" target="blank">Pelenia smart contracts</a> act as registries to validate the authenticity of digital assets for audiences & community (including reputation).</em></p>
 </div>
 </div>
@@ -561,9 +585,54 @@ Your browser does not support the video tag.
 <a href="#token-section" class="scroll-link-wrapper w-inline-block"><img src="https://pelenia.online/assets/landingPages/images/arrow-down.svg" loading="lazy" alt="" class="arrowdown no-pad" style="margin-top:25px;"><div class="scroll-link-text">yeah baby!</div>
 </a>
 </section>
-<section id="projects" class="sec center mb-lg-5">
-<div id="w-node-_5c2cbb24-4130-9fe2-26f3-11be68ed298c-4ce8cc9f" data-w-id="5c2cbb24-4130-9fe2-26f3-11be68ed298c" class="image-wrapper"><img src="https://pelenia.online/assets/landingPages/images/Jumping_Joy1.svg" loading="lazy" alt="" class="big-center-img"><img src="https://pelenia.online/assets/landingPages/images/Jumping_Joy2.svg" loading="lazy" alt="" class="big-center-img _2"><img src="https://pelenia.online/assets/landingPages/images/Jumping_Joy3.svg" loading="lazy" alt="" class="big-center-img _1"></div>
-</section>
+<div class="m-auto heading-wrapper center _75">
+    <h2>Pelenia Projects</h2>
+    <h4 class="m-auto p-5"><em>Here are the various projects the Pelenia DAO members are working on to creatively enrich the world.</em></h4>
+    <div class="stick-list m-auto single-item">
+                    <div class="stick-slide">
+                        <a href="https://plvrs.online">
+                            <img src="assets/landingPages/images/slider-carousel/1.png">
+                        </a>
+                    </div>
+                    <div class="stick-slide">
+                        <a href="https://www.spirals.me">
+                            <img src="assets/landingPages/images/slider-carousel/2.png">
+                        </a>
+                    </div>
+                    <div class="stick-slide">
+                        <a href="https://peledao.app/83843c9a1d264ff28e712f76ed8da01a?v=498919937dab47b8bc6bed2a9516a11b">
+                            <img src="assets/landingPages/images/slider-carousel/3.png">
+                        </a>
+                    </div>
+                    <div class="stick-slide">
+                        <a href="https://perceptions.live">
+                            <img src="assets/landingPages/images/slider-carousel/4.png">
+                        </a>
+                    </div>
+                    <div class="stick-slide">
+                        <a href="https://perceptiontravel.tv">
+                            <img src="assets/landingPages/images/slider-carousel/5.png">
+                        </a>
+                    </div>
+        </div>
+    <div class="slider-nav">
+                <div class="stick-slide2">
+                     <p class="text-center p-5"><em><a href="https://plvrs.online">Enter the PLVRS</a> (Pele-verse) is our foundational NFT set and animated project. It is a metaversal and multidimensional commentary on the struggle for decentralization, especially in the tech realm.</em></p>
+                </div>
+                <div class="stick-slide2">
+                     <p class="text-center p-5"><em><a href="https://www.spirals.me">Spirals</a> is a virtual administration, design and content creation agency promoting autonomous content platforms for creators and educators.</em></p>
+                </div>
+                <div class="stick-slide2">
+                     <p class="text-center p-5"><em><a href="https://peledao.app/83843c9a1d264ff28e712f76ed8da01a?v=498919937dab47b8bc6bed2a9516a11b">New School Reform</a> is a program offering hope to would-be delinquents and potential criminals by providing a more constructive and developed way of learning.</em></p>
+                </div>
+                <div class="stick-slide2">
+                     <p class="text-center p-5"><em><a href="https://perceptions.live">Perceptions.Live</a> organizes content on a map and feed tailored just for you. It makes it easy for your community members to login and submit links to their content. Post marketplace listings, photo galleries, blog posts, or just about anything else.</em></p>
+                </div>
+                <div class="stick-slide2">
+                     <p class="text-center p-5"><em><a href="https://perceptiontravel.tv">Perception Travel TV</a> is an autonomous (self-hosted) video hosting platform comprised of a global community of supportive societies, collaborative creativity, and sustainable living. Groups and individuals alike can connect to share videos of how we are all changing the story of our time.</em></p>
+                </div>
+    </div>
+</div>
 </section>
 <section id="token-section" class="sec center spc-top mb-lg-5">
 <div class="gridxl">
@@ -624,7 +693,7 @@ Your browser does not support the video tag.
 </div>
 </section>
 <div class="gridl">
-<h2 class="head" style="margin-top:80px;">Content creation just got worth it.</h3>
+<h2 class="head" style="margin-top:80px;">Content creation just got worth it.</h2>
 <h4 class="head wide">Wouldn't you rather your content generated value for yourself and your friends instead of for shareholders of big corporations?<br><br>Yeah, us too.</h4>
 <a href="https://t.me/getyousomepele" class="button w-inline-block" style="margin-bottom:100px;">
 <div class="buttontext">Join The Community</div>
@@ -764,14 +833,19 @@ Your browser does not support the video tag.
 </div>
 </div>
 </div>
-<script src="https://pelenia.online/assets/landingPages/jqueryv3.5.1.js" type="text/javascript"></script>
+</body>
+
+<script src="assets/landingPages/jqueryv3.5.1.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/landingPages/slick.js"></script>
+<script type="text/javascript" src="assets/landingPages/slick.min.js"></script>
 <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
-<script src="https://pelenia.online/assets/frontend/js/popper.min.js"></script>
-<script src="https://pelenia.online/assets/frontend/js/bootstrap.min.js"></script>
-<script src="https://pelenia.online/assets/landingPages/webflow.js" type="text/javascript"></script>
+<script src="assets/frontend/js/popper.min.js"></script>
+<script src="assets/frontend/js/bootstrap.min.js"></script>
+<script src="assets/landingPages/webflow.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
-<script src="https://pelenia.online/js/app.js">
+<script src="js/app.js">
 </script>
+
 <script>
     function showPaymentOptionModel(item_id){
         $(document).find('.project_info_model').html('');
@@ -799,4 +873,46 @@ Your browser does not support the video tag.
             enctype: 'multipart/form-data',
         });
     }
+    $(document).ready(function(){
+        $('.single-item').slick({
+          lazyLoad: 'ondemand',
+          centerPadding: '5px',
+          slidesToShow: 3,
+          centerMode: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          adaptiveHeight: true,
+          prevArrow: '<img class="slick-prev" loading="lazy" src="https://pelenia.online/assets/landingPages/images/arrow-down.svg" style="width:40px; height:40px; top:120px; transform: rotate(90deg);">',
+          nextArrow: '<img class="slick-next" loading="lazy" src="https://pelenia.online/assets/landingPages/images/arrow-down.svg" style="width:40px; height:40px; top:120px; transform: rotate(270deg);">', 
+          asNavFor: '.slider-nav',      
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+        $('.slider-nav').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          asNavFor: '.single-item',
+          arrows: false,
+          centerMode: true,
+          focusOnSelect: true
+        });
+    });
+    
 </script>
+</html>
